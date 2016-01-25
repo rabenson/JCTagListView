@@ -54,6 +54,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     _tagBackgroundColor = [UIColor clearColor];
     _tagTextColor = [UIColor darkGrayColor];
     _tagSelectedBackgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
+    _tagSelectedFontColor = [UIColor whiteColor];
     
     _tagCornerRadius = 10.0f;
     
@@ -102,6 +103,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     
     if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
         cell.backgroundColor = self.tagSelectedBackgroundColor;
+        cell.titleLabel.textColor = self.tagSelectedFontColor;
     }
     
     return cell;
@@ -119,6 +121,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
         }
         else {
             cell.backgroundColor = self.tagSelectedBackgroundColor;
+            cell.titleLabel.textColor = self.tagSelectedFontColor;
             
             [self.selectedTags addObject:self.tags[indexPath.item]];
         }

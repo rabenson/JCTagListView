@@ -16,6 +16,7 @@ typedef void (^JCTagListViewBlock)(NSInteger index);
 @property (nonatomic, strong) UIColor *tagTextColor;// default: darkGrayColor
 @property (nonatomic, strong) UIColor *tagBackgroundColor;// default: clearColor
 @property (nonatomic, strong) UIColor *tagSelectedBackgroundColor;// default: rgb(217,217,217)
+@property (nonatomic, strong) UIColor *tagSelectedFontColor;// default: whiteColor
 
 @property (nonatomic, assign) CGFloat tagCornerRadius;// default: 10
 @property (nonatomic, assign) BOOL canSelectTags;// default: NO
