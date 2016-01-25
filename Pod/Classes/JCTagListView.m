@@ -116,7 +116,8 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
         
         if ([self.selectedTags containsObject:self.tags[indexPath.item]]) {
             cell.backgroundColor = self.tagBackgroundColor;
-            
+            cell.titleLabel.textColor = self.tagTextColor;
+
             [self.selectedTags removeObject:self.tags[indexPath.item]];
         }
         else {
