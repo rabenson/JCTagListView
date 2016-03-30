@@ -56,6 +56,7 @@ static NSString * const reuseIdentifier = @"tagListViewItemId";
     _tagSelectedBackgroundColor = [UIColor colorWithRed:217/255.0f green:217/255.0f blue:217/255.0f alpha:1];
     _tagSelectedFontColor = [UIColor whiteColor];
     _tagFont = [UIFont fontWithName:@"HelveticaNeue" size:10.0f];
+    _fontSize = 10.0f;
     
     _tagCornerRadius = 10.0f;
     _tagPadding = 1.0f;
